@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Mi primer formulario</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+        <meta charset="UTF-8">
+        
+    </head>
+   <body> <center>
+        <form action="envioformulario.php" method="post"> 
+            
+            <h1>Registro de usuario</h1>
+            <fieldset>
+                <center><legend>Datos personales</legend></center>
+            
+
+            <div><label>Cédula:</label>
+            <input name="cedula" type="tel" placeholder="Digite su cédula" maxlength="10"></div>
+            <div><label>Nombre:</label>
+            <input name="nombre" type="text" placeholder="Digite su nombre" required></div>
+            <div><label>Sexo:</label>
+            <label>Hombre</label>
+            <input name="sexo" type="radio" value="Hombre">
+            <label>Mujer</label>
+            <input name="sexo" type="radio" value="Mujer"></div>
+            <div>
+                <label>Ciudad de nacimiento:</label>
+                <select name="ciudadnacimiento" required>
+                    <option value=""> Seleccione Ciudad</option>
+                    <option value="Medellín"> Medellín</option>
+                 <option value="Cali"> Cali</option>
+                  <option value="Pereira"> Pereira</option>
+                   <option value="Bogotá"> Bogotá</option>
+                </select>
+            </div>
+            <div>
+                <label>Fecha de naciomiento:</label>
+                <input type="date" placeholder="Fecha de nacimiento"required>
+            </div>
+             <div>
+                <label>Fecha de expedición de la cédula:</label>
+                <input type="date" placeholder="Fecha de expedición"required>
+            </div>
+            <div><label>Numero de celular:</label>
+            <input name="numero de telefono" type="tel" placeholder="Digite su numero de celular" maxlength="10"required></div>
+            <div><label>Dirección de residencia:</label>
+            <input name="direccion" type="texto" placeholder="Digite su dirección" required></div>
+            <br>
+            <div>
+                <button type="submit">Enviar formulario</button>
+                <button type="submit">Eliminar datos</button>
+            </div>
+            </fieldset>
+        </form>
+    </center></body>
+</html>
